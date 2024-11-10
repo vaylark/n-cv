@@ -15,7 +15,7 @@ export default async function Home() {
             description="About & Projects" 
           />
 
-          <Footer/>
+          {/* <Footer/> */}
     </section>
   );
 }

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/ui/NavBar";
 import MobileNav from "@/components/ui/MobileNav";
+import Footer from "@/components/ui/Footer";
 const CVURL = process.env.NEXT_CV_URL;
+
 
 export const metadata: Metadata = {
   title: "Nemrod C. | Full-Stack Software Developer",
@@ -70,11 +72,14 @@ export default function RootLayout({
           minHeight: '100vh',
         }}
       >
-        <main className="flex w-screen h-screen overflow-hidden">
+        <div className="root">
           <NavBar />
           <MobileNav />
-          {children}
-        </main>
+          <main className="md:flex md:h-screen">
+            {children}
+          </main>       
+          <Footer/>          
+        </div>
       </body>
     </html>
   );

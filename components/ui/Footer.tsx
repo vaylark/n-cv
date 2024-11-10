@@ -5,8 +5,7 @@ import IconTwitterLogo from "@/assets/IconTwitterLogo";
 export default function Footer() {
     return (
         <footer className="footer">
-            <div className="flex w-full h-full">
-                <div className="flex justify-center items-center h-full w-[8rem]">
+                <div className="flex justify-center items-center w-[8rem]">
                     <Image
                         src="/n-cv/xfbw92kjx3czat0aknuy"
                         alt="Application logo"
@@ -42,7 +41,6 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-            </div>
         </footer>
     );
 }
