@@ -1,8 +1,8 @@
 import LeftPanel from "@/components/ui/LeftPanel";
 import RightPanel from "@/components/ui/RightPanel";
+import Footer from "@/components/ui/Footer";
 
-
-export default function Home() {
+export default async function Home() {
   return (
     <section className="home">
           <LeftPanel
@@ -14,6 +14,8 @@ export default function Home() {
           <RightPanel
             description="About & Projects" 
           />
+
+          <Footer/>
     </section>
   );
 }

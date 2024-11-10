@@ -78,49 +78,26 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = [
-    "var(--slate-900)",
-    "var(--black)",
-    "var(--neutral-900)",
-  ];
-  const linearGradients = [
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
-  ];
-
-  const [backgroundGradient, setBackgroundGradient] = useState(
-    linearGradients[0]
-  );
-
-  useEffect(() => {
-    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeCard]);
 
   return (
-    <motion.div
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
+    <div
       className="h-[50rem] md:h-[30rem] w-full overflow-y-auto flex justify-center relative space-x-10 rounded-md "
       ref={ref}
     >
-
       <div
-        style={{ background: backgroundGradient }}
         className={cn(
           "hidden md:block h-[25rem] w-[45rem] rounded-xl bg-white sticky top-10 overflow-hidden ",
           contentClassName
         )}
       >
         {content[activeCard].imgSrc ? (
-          <div className="h-full w-full flex items-center justify-center text-white">
+          <div className="relative h-full w-full flex items-center justify-center text-white">
             <Image
               src={content[activeCard].imgSrc}
               fill
               className="h-full w-full object-cover"
-              alt="linear board demo"
+              alt={content[activeCard].title}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         ) : content[activeCard].vidSrc ? (
@@ -176,6 +153,6 @@ export const StickyScroll = ({
           <div className="h-40" />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };

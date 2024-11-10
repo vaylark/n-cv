@@ -1,6 +1,6 @@
 import IconFolderOpen from "@/assets/IconFolderOpen";
 import IconHome from "@/assets/IconHome";
-
+import { Content } from "@/components/ui/sticky-scroll-reveal";
 
 export const sidebarLinks = [
     {
@@ -159,3 +159,18 @@ export const collabchatContent = [
     backupImg: null
   }
 ];
+
+export const getContentType = (project: string): Content[] => {
+  switch (project) {
+    case 'prjmanager':
+      return prjmanagerContent;
+    case 'prjextension':
+      return prjextensionContent;
+    case 'prjbank':
+      return prjbankContent;
+    case 'collabchat':
+      return collabchatContent;
+    default:
+      return prjmanagerContent; // Puedes agregar una página 404 o mensaje de proyecto no encontrado
+  }
+};

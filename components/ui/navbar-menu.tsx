@@ -48,7 +48,7 @@ export const MenuItem = ({
       <motion.p
         transition={{ duration: 0.3 }}
         className={cn("cursor-pointer text-black hover:opacity-[0.9] dark:text-white", {
-          "text-white": active === item || pathname.startsWith('/projects')
+          "text-white": active === item || (pathname.startsWith('/projects') && item !== 'Contact')
         })}
       >
         {item}
@@ -191,8 +191,6 @@ export const ProductItem = ({
 
 
 
-
-
 export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
@@ -201,5 +199,16 @@ export const HoveredLink = ({ children, ...rest }: any) => {
     >
       {children}
     </Link>
+  );
+};
+
+export const HoveredContactlink = ({ children, ...rest }: any) => {
+  return (
+    <a
+      {...rest}
+      className="flex items-center space-x-2 text-neutral-700 dark:text-neutral-200 hover:text-black "
+    >
+      {children}
+    </a>
   );
 };
