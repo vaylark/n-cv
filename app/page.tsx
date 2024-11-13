@@ -1,6 +1,5 @@
 import LeftPanel from "@/components/ui/LeftPanel";
 import RightPanel from "@/components/ui/RightPanel";
-import Footer from "@/components/ui/Footer";
 
 export default async function Home() {
   return (
@@ -14,8 +13,6 @@ export default async function Home() {
           <RightPanel
             description="About & Projects" 
           />
-
-          {/* <Footer/> */}
     </section>
   );
 }

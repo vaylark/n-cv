@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/ui/NavBar";
 import MobileNav from "@/components/ui/MobileNav";
 import Footer from "@/components/ui/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const CVURL = process.env.NEXT_CV_URL;
 
 
@@ -77,6 +78,7 @@ export default function RootLayout({
           <MobileNav />
           <main className="md:flex md:h-screen">
             {children}
+            <SpeedInsights />
           </main>       
           <Footer/>          
         </div>
