@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 
 const transition = {
   type: "spring",
@@ -101,7 +102,12 @@ export const MobileMenuItem = ({
   return (
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.a
-        href={src}
+        href={src.startsWith('/projects') ? undefined : src} // Si empieza con /projects, no asigna href
+        onClick={(e) => {
+          if (src.startsWith('/projects')) {
+            e.preventDefault(); // Evita la navegación
+          }
+        }}
         transition={{ duration: 0.3 }}
         className={cn("mobilenav-sheet_close", {
           "bg-bank-gradient": isActive

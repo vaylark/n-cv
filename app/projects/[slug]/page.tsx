@@ -2,7 +2,6 @@ import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { getContentType } from "@/constants";
 import Head from "next/head";
 const CVURL = process.env.NEXT_CV_URL;
-import Footer from "@/components/ui/Footer";
 
 export default async function Project({ params }) {
   const { slug } = await params;

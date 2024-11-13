@@ -16,6 +16,7 @@ import IconMenu2Fill from '@/assets/IconMenu2Fill';
 import {HoveredLink, MobileMenuItem } from './navbar-menu';
 
 
+
 const MobileNav = () => {
 
   const pathName = usePathname()
