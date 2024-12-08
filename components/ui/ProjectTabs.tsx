@@ -94,7 +94,7 @@ export function ProjectTabs() {
             backgroundPosition: 'center'
         }}
             className="relative w-full overflow-hidden  h-full rounded-2xl p-6 md:p-12 font-bold text-white bg-gradient-to-br">
-            <TabButton title="Website" href="https://prjbank-cclmal-projects.vercel.app/"/>
+            <TabButton title="Website" href="https://prjbank-8zhafee9i-cclmal-projects.vercel.app/"/>
         </div>
       ),
     },
