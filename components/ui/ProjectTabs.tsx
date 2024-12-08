@@ -19,10 +19,11 @@ export function ProjectTabs() {
             className="relative w-full overflow-hidden  h-full rounded-2xl p-4 md:p-12 font-bold text-white bg-gradient-to-br">
             <p className="text-black text-4xl">Software Developer | Self-taught | Problem solver</p>
             <p className="hidden md:block text-black font-normal text-[14px] md:text-xl mt-2 md:mt-5">
-                I am a software developer with over 3 years of experience building web applications. 
-                What started as a hobby turned into flexible expertise in various frameworks and libraries. 
-                I excel at quickly adapting to new technologies and solving technical challenges in design, architecture, and implementation.
-                Always prioritizing efficiency and pragmatism, ready to face any challenge and contribute and innovate in the field.
+                Software developer with 2+ years of experience in web technologies, 
+                specialized in JavaScript, TypeScript, React, Next.js, Node.js with Express, and MongoDB,
+                with additional experience in PostgreSQL and Spring Boot. 
+                Self-taught and proactive, with skills to take projects from conception to prototype. 
+                I am looking to contribute to dynamic teams as a remote developer, combining creativity and problem-solving.
             </p>                
          
             <TabButton 
@@ -30,6 +31,22 @@ export function ProjectTabs() {
               href="https://www.linkedin.com/in/nemrod-c-41b428330" 
               styles="block"
             />
+        </div>
+      ),
+    },
+    {
+      title: "ShaffyNation",
+      value: "shaffynation",
+      content: (
+        <div 
+        style={{
+            backgroundImage: `url('https://res.cloudinary.com/dpmtz8b5x/image/upload/v1733669198/n-cv/mbvnblwpzzjm1ffm3ad2.png')`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+        }}
+            className="relative w-full overflow-hidden  h-full rounded-2xl p-6 md:p-12 font-bold text-white bg-gradient-to-br">
+            <TabButton title="Website" href="https://www.shaffynation.com/"/>
         </div>
       ),
     },

@@ -15,6 +15,41 @@ export const sidebarLinks = [
     }
 ];
 
+
+export const shaffynationContent = [
+  {
+    title: "ShaffyNation",
+    description:
+      "Products and services for the ShaffyNation community.",
+    url: "https://www.shaffynation.com",
+    imgUrl: "https://res.cloudinary.com/dpmtz8b5x/image/upload/v1733669198/n-cv/mbvnblwpzzjm1ffm3ad2.png",
+    imgSrc: "/n-cv/mbvnblwpzzjm1ffm3ad2",
+    vidSrc: null,
+    backupImg: null
+  },
+  {
+    title: "Aceternity UI Components",
+    description:
+      "Use of the Aceternity UI library, with a focus on the components that make up the ShaffyNation platform.",
+    url: "https://www.shaffynation.com",
+    imgUrl: "https://res.cloudinary.com/dpmtz8b5x/image/upload/v1733669293/n-cv/ripvj712x1atibnqloz2.png",
+    imgSrc: "/n-cv/ripvj712x1atibnqloz2",
+    vidSrc: null,
+    backupImg: null
+  },
+  {
+    title: "High SEO Performance",
+    description:
+      "The platform is optimized for search engines, with a focus on performance and user experience.",
+    url: "https://www.shaffynation.com",
+    imgUrl: "https://res.cloudinary.com/dpmtz8b5x/image/upload/v1733670088/n-cv/msp9qkef6zfvhqdmlbyd.png",
+    imgSrc: "/n-cv/msp9qkef6zfvhqdmlbyd",
+    vidSrc: null,
+    backupImg: null
+  },
+]
+
+
 export const prjmanagerContent = [
   {
     title: "PrJManager",
@@ -162,6 +197,8 @@ export const collabchatContent = [
 
 export const getContentType = (project: string): Content[] => {
   switch (project) {
+    case 'shaffynation':
+      return shaffynationContent;
     case 'prjmanager':
       return prjmanagerContent;
     case 'prjextension':

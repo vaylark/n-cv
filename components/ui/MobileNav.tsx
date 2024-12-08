@@ -60,6 +60,7 @@ const MobileNav = () => {
                                         Icon={link.icon}
                                     >
                                        {link.route.startsWith('/projects') ? (<div className="flex flex-col space-y-4 text-sm">
+                                            <HoveredLink href="/projects/shaffynation">ShaffyNation</HoveredLink>
                                             <HoveredLink href="/projects/prjmanager">PrJManager</HoveredLink>
                                             <HoveredLink href="/projects/prjextension">PrJExtension</HoveredLink>
                                             <HoveredLink href="/projects/prjbank">PrJBank</HoveredLink>

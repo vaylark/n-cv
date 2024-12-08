@@ -18,6 +18,12 @@ function NavBar({ className }: { className?: string }){
           <MenuItem setActive={setActive} active={active} item="Projects">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
+                title="ShaffyNation"
+                href="/projects/shaffynation"
+                src="/n-cv/mbvnblwpzzjm1ffm3ad2"
+                description="Products and services for the ShaffyNation community."
+              />
+              <ProductItem
                 title="PrJManager"
                 href="/projects/prjmanager"
                 src="/n-cv/drzuwbxxxmleagmiwabl"
