@@ -21,7 +21,6 @@ export const sidebarLinks = [
     }
 ];
 
-
 export const shaffynationContent = [
   {
     title: "ShaffyNation",
@@ -53,8 +52,7 @@ export const shaffynationContent = [
     vidSrc: null,
     backupImg: null
   },
-]
-
+];
 
 export const prjmanagerContent = [
   {
@@ -148,7 +146,7 @@ export const prjbankContent = [
       "Is it possible to build a fintech from third-party services? Absolutely. Nowadays, it is not necessary to build everything from scratch, whether it is transaction logic, authentication, or a custom backend. All of this is available thanks to third parties, PrJBank shows that a frontend is enough to launch your next startup.",
     imgUrl: "https://res.cloudinary.com/dpmtz8b5x/image/upload/v1730795832/n-cv/gho4v58z7yqbua9njliu.png",
     imgSrc: "/n-cv/gho4v58z7yqbua9njliu",
-    url: "https://prjbank-8zhafee9i-cclmal-projects.vercel.app",
+    url: "https://prjbank-4oa6txnq4-cclmal-projects.vercel.app",
     backupImg: null
   },
   {
@@ -157,7 +155,7 @@ export const prjbankContent = [
       "Complete management of bank accounts, as well as the credit cards associated with each of these.",
       imgUrl: null,
       imgSrc: "/n-cv/mp2pdly8u7vcd5zrius7",
-      url: "https://prjbank-8zhafee9i-cclmal-projects.vercel.app",
+      url: "https://prjbank-4oa6txnq4-cclmal-projects.vercel.app",
       backupImg: null
   },
   {
@@ -166,7 +164,7 @@ export const prjbankContent = [
       "View transaction history across multiple accounts, dates, amounts, cards.",
       imgUrl: null,
       imgSrc: "/n-cv/pdgm04z9vjn1mohaacu7",
-      url: "https://prjbank-8zhafee9i-cclmal-projects.vercel.app",
+      url: "https://prjbank-4oa6txnq4-cclmal-projects.vercel.app",
       backupImg: null
   },
   {
@@ -175,7 +173,7 @@ export const prjbankContent = [
       "Complete process of transferring money to another account of yours or others.",
       imgUrl: null,
       imgSrc: "/n-cv/ilfilims8nu3dczxmbdp",
-      url: "https://prjbank-8zhafee9i-cclmal-projects.vercel.app",
+      url: "https://prjbank-4oa6txnq4-cclmal-projects.vercel.app",
       backupImg: null
   },
   {
@@ -184,7 +182,7 @@ export const prjbankContent = [
       "The Plaid API allows you to connect multiple bank accounts, from multiple banking institutions.",
       imgUrl: null,
       imgSrc: "/n-cv/g1ad6giwwyibao84p9fa",
-      url: "https://prjbank-8zhafee9i-cclmal-projects.vercel.app",
+      url: "https://prjbank-4oa6txnq4-cclmal-projects.vercel.app",
       backupImg: null
   },
 ];
