@@ -1,5 +1,6 @@
 import IconFolderOpen from "@/assets/IconFolderOpen";
 import IconHome from "@/assets/IconHome";
+import IconGithub from "@/assets/IconGithub";
 import { Content } from "@/components/ui/sticky-scroll-reveal";
 
 export const sidebarLinks = [
@@ -7,6 +8,11 @@ export const sidebarLinks = [
       route: "/",
       label: "Home",
       icon: IconHome,
+    },
+    {
+      route: "https://github.com/vaylark",
+      label: "Github",
+      icon: IconGithub,
     },
     {
       route: "/projects",

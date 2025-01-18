@@ -27,18 +27,6 @@ export default function Footer() {
                                 nemdevcontact@gmail.com
                             </a>
                         </li>
-                        <li className="flex text-white items-center space-x-2">
-                            <IconTwitterLogo aria-hidden="true" />
-                            <a
-                                href="https://x.com/neeeemrod"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-sm hover:underline"
-                                aria-label="Twitter profile of Nemrod C."
-                            >
-                                @neeeemrod
-                            </a>
-                        </li>
                     </ul>
                 </div>
         </footer>

@@ -1,10 +1,13 @@
 'use client'
 
 import React, { useState } from "react";
-import { Menu, MenuItem, ProductItem, MenuItemLink, HoveredContactlink } from "../ui/navbar-menu";
+import { Menu, MenuItem, ProductItem, MenuItemLink, HoveredContactlink, ExternalMenuItemLink } from "../ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import IconEmailOutline from "@/assets/IconEmailOutline";
 import IconTwitterLogo from "@/assets/IconTwitterLogo";
+import {
+  IconBrandX
+} from "@tabler/icons-react";
 
 function NavBar({ className }: { className?: string }){
     const [active, setActive] = useState<string | null>(null);
@@ -14,6 +17,7 @@ function NavBar({ className }: { className?: string }){
       >
         <Menu setActive={setActive}>
           <MenuItemLink setActive={setActive} active={active} href="/">Home</MenuItemLink>
+          <ExternalMenuItemLink setActive={setActive} active={active} href="https://github.com/vaylark">Github</ExternalMenuItemLink>
 
           <MenuItem setActive={setActive} active={active} item="Projects">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
@@ -60,12 +64,11 @@ function NavBar({ className }: { className?: string }){
              <IconEmailOutline className="text-black" aria-hidden="true" /> <span>nemdevcontact@gmail.com</span> 
             </HoveredContactlink>
             <HoveredContactlink 
-              href="https://x.com/neeeemrod"
+              href="https://x.com/vaylark"
               target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter profile of Nemrod C."
+              aria-label="Email Nemrod C."
             >
-             <IconTwitterLogo className="text-black" aria-hidden="true" /> <span>@neeeemrod</span> 
+             <IconBrandX className="w-4 h-4 text-black" aria-hidden="true" /> <span>@vaylark</span> 
             </HoveredContactlink>
           </div>
         </MenuItem>

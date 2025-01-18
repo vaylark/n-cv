@@ -17,20 +17,18 @@ export function ProjectTabs() {
                 backgroundPosition: 'center'
             }}
             className="relative w-full overflow-hidden  h-full rounded-2xl p-4 md:p-12 font-bold text-white bg-gradient-to-br">
-            <p className="text-black text-4xl">Software Developer | Self-taught | Problem solver</p>
-            <p className="hidden md:block text-black font-normal text-[14px] md:text-xl mt-2 md:mt-5">
-                Software developer with 2+ years of experience in web technologies, 
-                specialized in JavaScript, TypeScript, React, Next.js, Node.js with Express, and MongoDB,
-                with additional experience in PostgreSQL and Spring Boot. 
-                Self-taught and proactive, with skills to take projects from conception to prototype. 
-                I am looking to contribute to dynamic teams as a remote developer, combining creativity and problem-solving.
+            <p className="hidden md:block text-black text-4xl">Nemrod Cardona | Fullstack Developer</p>
+            <p className=" text-black font-normal text-[16px] md:text-lg mt-2 md:mt-5">
+            With over 2 years of experience in web development, I have a strong foundation in creating robust, user-centered applications. My adaptability and proficiency across various frameworks and programming languages enable me to tackle diverse challenges and deliver efficient solutions.
+
+As a self-taught, proactive professional, I excel at taking projects from concept to prototype, always focusing on innovation and quality. 
+                <span className="hidden sm:block">
+                  I thrive in collaborative environments, 
+                  where my creativity and problem-solving skills contribute to achieving team goals and driving impactful results.                  
+                </span>
+
             </p>                
          
-            <TabButton 
-              title="Linkedin" 
-              href="https://www.linkedin.com/in/nemrod-c-41b428330" 
-              styles="block"
-            />
         </div>
       ),
     },
@@ -94,7 +92,7 @@ export function ProjectTabs() {
             backgroundPosition: 'center'
         }}
             className="relative w-full overflow-hidden  h-full rounded-2xl p-6 md:p-12 font-bold text-white bg-gradient-to-br">
-            <TabButton title="Website" href="https://prjbank-8zhafee9i-cclmal-projects.vercel.app/"/>
+            <TabButton title="Website" href="https://prjbank-8zhafee9i-cclmal-projects.vercel.app"/>
         </div>
       ),
     },

@@ -31,6 +31,20 @@ export const MenuItemLink = ({ children, setActive, active, ...rest }: any) => {
     </Link>
   );
 };
+export const ExternalMenuItemLink = ({ children, setActive, active, ...rest }: any) => {
+  return (
+    <a
+      target="_blank"
+      {...rest}
+      onMouseEnter={() => setActive(children)}
+      className={cn("text-black hover:opacity-[0.9] dark:text-white", {
+        "text-white": active === children,
+      })}
+    >
+      {children}
+    </a>
+  );
+};
 
 export const MenuItem = ({
   setActive,
