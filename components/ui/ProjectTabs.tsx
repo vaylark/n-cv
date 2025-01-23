@@ -18,7 +18,7 @@ export function ProjectTabs() {
             }}
             className="relative w-full overflow-hidden  h-full rounded-2xl p-4 md:p-12 font-bold text-white bg-gradient-to-br">
             <p className="hidden md:block text-black text-4xl">Nemrod Cardona | Fullstack Developer</p>
-            <p className=" text-black font-normal text-[16px] md:text-lg mt-2 md:mt-5">
+            <p className=" text-black font-normal text-[15px] md:text-lg mt-2 md:mt-5">
             With over 2 years of experience in web development, I have a strong foundation in creating robust, user-centered applications. My adaptability and proficiency across various frameworks and programming languages enable me to tackle diverse challenges and deliver efficient solutions.
 
 As a self-taught, proactive professional, I excel at taking projects from concept to prototype, always focusing on innovation and quality. 
